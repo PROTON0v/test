@@ -3,7 +3,7 @@ body{
     font-family: 'Figtree', sans-serif;
 }
 .container{
-position: absolute;
+position: fixed;
 top: 50%;
 left: 50%;
 transform: translate(-50% ,-50%);
@@ -65,91 +65,38 @@ p{
   color: hsl(0, 0%, 7%) ;
   font-weight: 800;
 }
-/* Media Queries */
-  @media (max-width: 375px) {
-    .container {
-      width: 90%;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .img-container {
-      height: 150px;
-      width: 100%;
-    }
-  
-    .ibtn button {
-      width: 50px;
-      height: 20px;
-      font-size: 10px;
-    }
-  
-    p {
-      font-size: 12px;
-    }
-  
-    .info {
-      font-size: 12px;
-      gap: 5px;
-    }
-  }
-  @media (min-width: 1440px) {
-    .container {
-      width: 30%;  /* Make container even wider on large screens */
-      height: 600px;
-      padding: 30px;  /* Increase padding for more space */
-    }
-  
-    .img-container {
-      width: 70%;
-      height: 350px;  /* Make image container larger */
-    }
-  
-    .ibtn button {
-      width: 140px;
-      height: 45px;
-      font-size: 18px;  /* Larger button size for larger screens */
-    }
-  
-    p {
-      font-size: 18px;  /* Increase font size for readability on larger screens */
-    }
-  
-    .info {
-      font-size: 18px;  /* Increase info font size for larger screens */
-      gap: 15px;  /* More spacing between info items */
-    }
-  }
-  @media (min-width: 1366px) {
-    .container {
-      width: 35%;  /* Adjust container width for 1366px resolution */
-      height: 550px;  /* Adjust height to make it proportional */
-      padding: 25px;  /* Comfortable padding for larger screens */
-    }
-  
-    .img-container {
-      width: 80%;  /* Image container width adjusted */
-      height: 300px;  /* Increase image container height */
-    }
-  
-    .ibtn button {
-      width: 110px;
-      height: 38px;
-      font-size: 15px;  /* Larger font size for better visibility */
-    }
-  
-    p {
-      font-size: 17px;  /* Adjust text size for readability */
-    }
-  
-    .info {
-      font-size: 17px;
-      gap: 12px;  /* Increased space between items for large screens */
-    }
-  }
-    
-  
-  
-  
- 
-    
+
+/* mobile*/
+@media screen and (max-width:768px) {
+  .container {
+    width: 90%; /* Make it take 90% of the screen width */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 15px; /* Reduce padding */
+    max-width: 300px;
+}
+
+
+.img-container {
+    width: 100%; /* Full width */
+    height: 180px; /* Adjust height to be smaller */
+}
+
+.ibtn button {
+    width: 70px; /* Adjust button width */
+    height: 30px; /* Adjust button height */
+    font-size: 12px; /* Adjust font size */
+}
+
+span {
+    font-size: 18px; /* Adjust font size */
+}
+
+p {
+    font-size: 14px; /* Adjust paragraph font size */
+}
+
+.info {
+    font-size: 14px; /* Adjust font size */
+}
+
+}    
