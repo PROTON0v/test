@@ -53,6 +53,11 @@ span{
     font-weight: 800;
     font-size: 19px;
 }
+span:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
 p{
     font-size: 16px;
     color:  hsl(0, 0%, 42%);
