@@ -1,0 +1,155 @@
+body{
+    background-color: hsl(47, 88%, 63%) ;
+    font-family: 'Figtree', sans-serif;
+}
+.container{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+width: 383px;
+height: 517px;
+background-color: hsl(0, 0%, 100%);
+display: flex;
+flex-direction: column;
+padding:19px ;
+justify-content: space-between;
+border-radius: 20px;
+border:1px solid hsl(0, 0%, 42%);
+box-shadow: 10px 10px  hsl(0, 0%, 7%)
+
+}
+
+
+  
+  
+.img-container{
+    width: 381px;
+    height: 212px;
+    align-self: center;
+    border-radius: 20px;
+   
+    overflow:hidden ;
+}
+.img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+         
+}
+
+.ibtn button{
+    margin-top: 10px;
+    height: 28px;
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(47, 88%, 63%);
+    color:  hsl(0, 0%, 7%);
+    font-weight: 600;
+    font-size: 13px;
+}
+span{
+    font-weight: 800;
+    font-size: 19px;
+}
+p{
+    font-size: 16px;
+    color:  hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+.info{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(0, 0%, 7%) ;
+  font-weight: 800;
+}
+/* Media Queries */
+  @media (max-width: 375px) {
+    .container {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .img-container {
+      height: 150px;
+      width: 100%;
+    }
+  
+    .ibtn button {
+      width: 50px;
+      height: 20px;
+      font-size: 10px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  
+    .info {
+      font-size: 12px;
+      gap: 5px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .container {
+      width: 30%;  /* Make container even wider on large screens */
+      height: 600px;
+      padding: 30px;  /* Increase padding for more space */
+    }
+  
+    .img-container {
+      width: 70%;
+      height: 350px;  /* Make image container larger */
+    }
+  
+    .ibtn button {
+      width: 140px;
+      height: 45px;
+      font-size: 18px;  /* Larger button size for larger screens */
+    }
+  
+    p {
+      font-size: 18px;  /* Increase font size for readability on larger screens */
+    }
+  
+    .info {
+      font-size: 18px;  /* Increase info font size for larger screens */
+      gap: 15px;  /* More spacing between info items */
+    }
+  }
+  @media (min-width: 1366px) {
+    .container {
+      width: 35%;  /* Adjust container width for 1366px resolution */
+      height: 550px;  /* Adjust height to make it proportional */
+      padding: 25px;  /* Comfortable padding for larger screens */
+    }
+  
+    .img-container {
+      width: 80%;  /* Image container width adjusted */
+      height: 300px;  /* Increase image container height */
+    }
+  
+    .ibtn button {
+      width: 110px;
+      height: 38px;
+      font-size: 15px;  /* Larger font size for better visibility */
+    }
+  
+    p {
+      font-size: 17px;  /* Adjust text size for readability */
+    }
+  
+    .info {
+      font-size: 17px;
+      gap: 12px;  /* Increased space between items for large screens */
+    }
+  }
+    
+  
+  
+  
+ 
+    
